@@ -12,7 +12,7 @@ function Home(){
 
     async function loadWeatherTnfo() {
         try{
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_API_KEY}`)
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f652964084c552e8c0492237a3fabd9c`)
 
         setTemperature((response.data.main.temp -273).toFixed(2))
         setMessage('✅ Data fetched successfully....')
